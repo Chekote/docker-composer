@@ -1,12 +1,7 @@
 A [Docker](https://www.docker.com) image for the [Composer]
 (https://getcomposer.org/) Dependency Manager for PHP.
 
-To build the image:
-
-`docker build -t chekote/docker-composer .`
-
-When using the container with a project, you can easily run composer commands
-against the container by doing the following:
+To use the container with a project, do the following:
 
 * Copy the bin directory into your project.
 
