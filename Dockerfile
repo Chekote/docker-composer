@@ -1,4 +1,4 @@
-FROM chekote/php:7-cli
+FROM chekote/php:7.0.2
 
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php && \
