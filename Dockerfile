@@ -1,5 +1,6 @@
 FROM chekote/php:7.0.2
 
+# Install packages
 RUN apt-get update && \
     apt-get install -y curl && \
     apt-get install -y php7.0-curl && \
@@ -8,7 +9,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
 
-# Install composer
+    # Install composer
     curl -sS https://getcomposer.org/installer | php && \
     mv composer.phar /usr/local/bin/composer
 
