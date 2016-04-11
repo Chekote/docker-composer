@@ -3,6 +3,7 @@ FROM chekote/php:7.0.2
 RUN apt-get update && \
     apt-get install -y curl && \
     apt-get install -y php7.0-curl && \
+    apt-get install -y php7.0-mcrypt && \
 
 # Install composer
     curl -sS https://getcomposer.org/installer | php && \
