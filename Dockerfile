@@ -16,4 +16,4 @@ RUN apt-get update && \
 VOLUME ["/data"]
 WORKDIR /data
 
-CMD ["composer", "install"]
+ENTRYPOINT ["/bin/bash", "-c"]
