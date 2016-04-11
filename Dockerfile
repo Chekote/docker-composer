@@ -1,10 +1,10 @@
-FROM chekote/php:7.0.2
+FROM chekote/php:5-cli
 
 # Install packages
 RUN apt-get update && \
     apt-get install -y curl && \
-    apt-get install -y php7.0-curl && \
-    apt-get install -y php7.0-mcrypt && \
+    apt-get install -y php5-curl && \
+    apt-get install -y php5-mcrypt && \
     apt-get autoremove -y && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
