@@ -1,4 +1,4 @@
-FROM chekote/php:7.0.2
+FROM chekote/php:7-cli
 
 # Install packages
 RUN apt-get update && \
